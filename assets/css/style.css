@@ -59,20 +59,7 @@ nav {
   }
 
   .menu {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-
-    a {
-      color: var(--white);
-      padding: 12px;
-      border-radius: var(--round);
-      transition: 300ms ease all;
-    }
-
-    a:hover {
-      background-color: var(--dark-gray);
-    }
+    display: none;
   }
 }
 
@@ -181,5 +168,23 @@ footer {
   .contacts {
     flex-direction: row;
     align-items: center;
+  }
+  nav {
+    .menu {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      a {
+        color: var(--white);
+        padding: 12px;
+        border-radius: var(--round);
+        transition: 300ms ease all;
+      }
+
+      a:hover {
+        background-color: var(--dark-gray);
+      }
+    }
   }
 }
