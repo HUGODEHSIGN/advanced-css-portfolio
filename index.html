@@ -18,14 +18,14 @@
       <nav>
         <h1>Hugo's Portfolio</h1>
         <div class="menu">
-          <p>About</p>
-          <p>Projects</p>
-          <p>Contact</p>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
     <main class="container">
-      <section>
+      <section id="about">
         <h2>About Me</h2>
         <div class="section-content">
           <img
@@ -47,7 +47,7 @@
           the layout of this page.
         </p>
       </section>
-      <section>
+      <section id="projects">
         <h2>Projects</h2>
         <div class="section-content">
           <div class="thumbnail thumbnail-full">
@@ -73,15 +73,25 @@
     </main>
 
     <footer>
-      <section>
-        <h2>Contacts</h2>
+      <section id="contact">
+        <h2>Contact</h2>
         <div class="section-content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            labore ducimus in doloremque vel similique velit quisquam, nesciunt
-            nihil debitis error. Quasi aspernatur nisi voluptatum laboriosam,
-            quidem blanditiis suscipit fugiat?
-          </p>
+          <ul class="contacts">
+            <li>
+              <p>Email: hhsi@hugodehsign.com</p>
+            </li>
+            <li>
+              <p>
+                Github:
+                <a href="https://github.com/HUGODEHSIGN"
+                  >https://github.com/HUGODEHSIGN</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>Phone: 1 (669) 238 - 6417</p>
+            </li>
+          </ul>
         </div>
       </section>
     </footer>

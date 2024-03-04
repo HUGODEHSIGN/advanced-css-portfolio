@@ -2,12 +2,20 @@
   --teal: #539b83;
   --dark-teal: #3d716b;
   --light-green: #bfbe9b;
+  --gray: #465055;
+  --dark-gray: #1d2431;
+  --white: #f5f4e4;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--white);
 }
 
 main {
@@ -24,7 +32,7 @@ img {
 }
 
 nav {
-  background-color: var(--teal);
+  background-color: var(--gray);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,11 +45,20 @@ nav {
   z-index: 1;
   h1 {
     font-size: 1.5rem;
+    color: var(--white);
   }
   .menu {
     display: flex;
     flex-direction: row;
     gap: 32px;
+
+    p {
+      color: var(--white);
+    }
+
+    p:hover {
+      background-color: var(--dark-gray);
+    }
   }
 }
 
@@ -98,4 +115,17 @@ section {
 footer {
   padding: 16px;
   background-color: gray;
+}
+
+.contacts {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+}
+
+.copy {
+  margin-top: 8px;
+  text-align: center;
 }
